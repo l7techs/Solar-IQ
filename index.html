@@ -265,7 +265,13 @@
     /* ─── Sections ─── */
     /* Generous vertical rhythm between marketing sections so each block
        has breathing room on large monitors; collapses gracefully on mobile. */
-    section { padding: clamp(80px, 14vh, 160px) 0; }
+    section { padding: clamp(110px, 18vh, 220px) 0; }
+    /* Extra isolation for the two blocks the user flagged as feeling cramped:
+       - the CTA box sits between steps and FAQ, so give it extra breathing room
+         above and below,
+       - the FAQ eyebrow also gets pulled down a touch. */
+    #download { padding-top: clamp(140px, 22vh, 260px); padding-bottom: clamp(140px, 22vh, 260px); }
+    #faq      { padding-top: clamp(120px, 20vh, 240px); }
     .eyebrow {
       color: var(--primary); font-weight: 700; font-size: 13px;
       letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 10px;
