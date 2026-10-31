@@ -124,7 +124,7 @@
     <header class="hero">
       <div class="eyebrow">Legal</div>
       <h1>Privacy <span class="g">Policy</span></h1>
-      <p class="updated">Last updated: April 21, 2026</p>
+      <p class="updated">Last updated: October 31, 2026</p>
     </header>
 
     <section class="doc">
@@ -142,7 +142,8 @@
         <h2>1. Data we collect</h2>
         <p>Solar-IQ collects only the minimum data it needs to function:</p>
         <ul>
-          <li><strong>Shinemonitor username and password</strong> — stored encrypted in your private Supabase account so the app can authenticate against the Shinemonitor API on your behalf.</li>
+          <li><strong>Solar-IQ account</strong> — the email address and password you sign up with, used only to sign you in.</li>
+          <li><strong>Inverter account credentials</strong> — the Shinemonitor (WatchPower) or i.Solar username and password for each system you add, stored encrypted in your private Supabase account so the app can authenticate against that service on your behalf.</li>
           <li><strong>Inverter telemetry</strong> — PV power, load power, battery state-of-charge, battery power, grid power, daily energy, device fault codes.</li>
           <li><strong>Home location (optional)</strong> — latitude and longitude you pick on the map, used only for local solar irradiance calculations.</li>
           <li><strong>Push notification token</strong> — Firebase Cloud Messaging (Android) or Apple Push Notification service (iOS) token, used to deliver alerts.</li>
@@ -175,7 +176,8 @@
       <div>
         <h2>4. Third-party services</h2>
         <ul>
-          <li><strong>Shinemonitor cloud</strong> — required to talk to the inverter.</li>
+          <li><strong>Shinemonitor cloud and i.Solar cloud</strong> — required to talk to the inverter.</li>
+          <li><strong>Open-Meteo, OpenStreetMap and ipinfo.io</strong> — weather forecast, home-location map and approximate-location fallback.</li>
           <li><strong>Supabase</strong> — authentication, database, edge functions.</li>
           <li><strong>Firebase Cloud Messaging / Apple Push Notification service</strong> — delivery of push notifications.</li>
         </ul>
